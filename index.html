@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Keith</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <nav aria-label="Main navigation">
+        <div class="navbar">
+            <a href="#home" class="brand">
+                <img src="images/Dashboard.jpg" alt="Keith Tobias Opiyo" class="dashboard-picture">
+                <span class="brand-name">Keith Tobias Opiyo</span>
+            </a>
+            <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search my portfolio">
+                <button id="searchButton">Search</button>
+            </div>
+
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#resume">Resume</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home">
+        <img src="images/profilep.jpg" alt="Profile Picture" class="profile-picture">
+        <h1>
+            Hi, I'm <span class="highlight">Keith Tobias Opiyo</span>
+        </h1>
+        <h2>An Information Science and Technology Professional</h2>
+
+        <p>
+            I build modern, responsive websites and useful digital solutions that help people and businesses achieve
+            their goals.
+        </p>
+        <div class="home-buttons">
+            <a class="hire-button" href="mailto:keithtobias.05@gmail.com?subject=Hiring%20Inquiry">Hire Me</a>
+            <a href="#projects" class="home-button">View My Projects</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <h3>Autobiography</h3>
+                <p>
+                    I was born and raised in Ragak village, Yimbo East ward, Bondo sub-county, Siaya County, Kenya. I
+                    did my primary education in Ragak primary school from 2010-2016. I then joined Got Agulu Secondary
+                    School for my secondary education from 2017-2020. I excelled in my Kenya Certificate of Secondary
+                    Education (KCSE) examinations and joined Moi University to pursue a Bachelor degree of Science in
+                    Information Sciences.
+                </p>
+                <p>
+                    I enjoy self-learning new technologies and use them to create solutions to real-world problems.<br>
+                    What motivates me is the desire to make a positive impact in the world through technology. My goal
+                    is to
+                    use my skills to create innovative solutions that make a difference in people's lives. My vision is
+                    to be a leading technology professional who inspires and empowers other young professionals to
+                    achieve their full potential.
+                </p>
+                <a href="#contact" class="about-botton">Contact Me</a>
+            </div>
+            <div class="about-box">
+                <h3>Services Offered</h3>
+                <p>Web Development</p>
+                <p>Website Maintenance</p>
+                <p>Information Management</p>
+                <p>Records Management</p>
+                <p>Web Application Development</p>
+                <p>Database Management</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <h3>HTML</h3>
+                <p>Creating and structuring web content.</p>
+            </div>
+            <div class="skill-card">
+                <h3>CSS</h3>
+                <p>Designing and styling websites.</p>
+            </div>
+            <div class="skill-card">
+                <h3>JavaScript</h3>
+                <p>Adding interaction and functionality.</p>
+            </div>
+            <div class="skill-card">
+                <h3>Python</h3>
+                <p>Programming and developing applications.</p>
+            </div>
+            <div class="skill-card">
+                <h3>Information Management</h3>
+                <p>Managing, organizing and preserving information.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <h3>Personal Portfolio</h3>
+                <p>A personal website showcasing my skills,<br>education and projects</p>
+                <a href="index.html">View Project</a>
+            </div>
+            <div class="project-card">
+                <iframe class="project-preview" src="https://dailyenlightenment0.wordpress.com"
+                    title="Live WordPress homepage preview" loading="lazy"></iframe>
+                <h3>Wordpress Blog Website</h3>
+                <p>Created my own website for<br>blogging using wordpress</p>
+                <a href="https://dailyenlightenment0.wordpress.com" target="_blank" rel="noopener noreferrer">View
+                    Project</a>
+            </div>
+        </div>
+        <div class="projects-notice" role="status" aria-label="More projects are underway">
+            <span>More projects are underway. They will be ready in 2 weeks.</span>
+        </div>
+    </section>
+
+    <section id="resume">
+        <h2>My Resume</h2>
+        <p>You can download my resume to learn more about my education, skills, and experience.</p>
+        <a href="resume.pdf" download class="download-button">Download Resume</a>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Want to know more or want to work with me? Feel free to reach out!</p>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+            <button type="submit">Send Message</button>
+            <p id="contact-status" role="status" aria-live="polite"></p>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+    <hr class="footer-separator">
+    <h3 class="footer-heading">Contact Information</h3>
+    <p>
+        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+        <span class="sr-only">Phone</span>: +254 110235833<br>
+        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+        <span class="sr-only">Email</span>: keithtobias.05@gmail.com
+    </p>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/KEILIGHTMENT" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
+            title="Facebook">
+            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.instagram.com/keilight_ment" target="_blank" rel="noopener noreferrer"
+            aria-label="Instagram" title="Instagram">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/keith-tobias-466721235" target="_blank" rel="noopener noreferrer"
+            aria-label="LinkedIn" title="LinkedIn">
+            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+        </a>
+    </div>
+    <a class="whatsapp-float"
+        href="https://wa.me/254110235833?text=Hello%20Keith,%20I%20would%20like%20to%20get%20in%20touch."
+        target="_blank" rel="noopener noreferrer" aria-label="Message me on WhatsApp" title="Message me on WhatsApp">
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+    </a>
+    <footer>
+        <p>&copy; 2024 Keith Tobias Opiyo. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
